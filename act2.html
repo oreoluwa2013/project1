@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, lightblue, yellow);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200vw;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.1 rem;
+        }
+
+        #myh1 {
+            margin: auto;
+            text-align: center;
+            background-color: aqua;
+            border: 2px solid red;
+        }
+
+        #demo {
+            background-color: aqua;
+            border: 1px solid black;
+            font-size: 1.2rem;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="myh1">Sum of Arguments - After Class Project</h1>
+
+
+
+    <p id="demo"></p>
+    <script>
+        SumDegrees = function () {
+            sum = 0; for (const key in arguments) {
+
+                sum += arguments[key]
+
+            }
+            return sum
+        }
+        document.getElementById("demo").innerHTML = "The Sum of All input Degrees are: " + SumDegrees(20, 30, 40);
+    </script>
+</body>
+
+</html>
